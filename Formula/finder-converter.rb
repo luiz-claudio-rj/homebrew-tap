@@ -1,8 +1,8 @@
 class FinderConverter < Formula
   desc "Converte vídeo, áudio e imagem com o botão direito no Finder"
   homepage "https://luiz-claudio-rj.github.io/finder-converter/"
-  url "https://github.com/luiz-claudio-rj/finder-converter/archive/refs/tags/v1.1.0.tar.gz"
-  sha256 "d79f344dd45e4410bce419205143b0cb74bd998788f076d8eda92a00a5faf76c"
+  url "https://github.com/luiz-claudio-rj/finder-converter/archive/refs/tags/v1.1.1.tar.gz"
+  sha256 "83ca7dfe8863cbfca1b675450de9ae5dc41bdf118b77e5b1a04689a8388bb5fe"
   license "MIT"
 
   depends_on "ffmpeg"
