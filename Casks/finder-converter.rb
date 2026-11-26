@@ -1,6 +1,6 @@
 cask "finder-converter" do
-  version "1.3.0"
-  sha256 "a11b91dd824a7398eef42aca5fc0b94d9820bed5a5cf046fb3bd1c674fc3a01d"
+  version "1.4.0"
+  sha256 "051f9af2ee79764cfc79157edb8d4286a666dc4f20dd64a93db09b9af5426ec2"
 
   url "https://github.com/luiz-claudio-rj/finder-converter/archive/refs/tags/v#{version}.tar.gz"
   name "Converter"
@@ -15,6 +15,7 @@ cask "finder-converter" do
   depends_on formula: ["ffmpeg", "webp"]
   depends_on macos: :ventura
 
+  app "finder-converter-#{version}/Converter.app"
   binary "finder-converter-#{version}/bin/finder-converter"
   service "finder-converter-#{version}/workflow/Converter.workflow"
 
@@ -26,6 +27,8 @@ cask "finder-converter" do
          source_base: :staged_path, target_base: :staged_path
     set_permissions "finder-converter-#{version}/workflow/Converter.workflow/Contents/Resources/converter.sh",
                     "0755", base: :staged_path
+    # Monta o app no próprio Mac com o osacompile, que vem com o macOS
+    run "/bin/zsh", args: ["app/montar.sh", "Converter.app"], chdir: "finder-converter-{{version}}"
   end
 
   # Liga "Converter…" no menu de contexto e nas Ações Rápidas do Finder
@@ -49,6 +52,8 @@ cask "finder-converter" do
     terminate_process "Finder"
   end
 
+  uninstall quit: "io.github.luiz-claudio-rj.converter"
+
   zap trash: [
     "~/Library/Application Support/Converter",
     "~/Library/Logs/Converter.log",
@@ -56,5 +61,6 @@ cask "finder-converter" do
 
   caveats <<~EOS
     No Finder: botão direito em um vídeo, áudio ou imagem → Ações Rápidas → Converter…
+    Ou abra o app Converter e solte os arquivos na janela.
   EOS
 end
