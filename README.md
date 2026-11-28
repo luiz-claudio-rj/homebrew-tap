@@ -4,7 +4,7 @@ Pacotes do Homebrew de [luiz-claudio-rj](https://github.com/luiz-claudio-rj).
 
 ## Organizador para Mac
 
-Organize arquivos em pastas por assunto com o botão direito no Finder. Você vê a proposta antes e pode desfazer. [Código e instruções](https://github.com/luiz-claudio-rj/finder-organizer)
+Organize arquivos em pastas por assunto com o botão direito no Finder. Você vê a proposta antes e pode desfazer. [Página do projeto](https://luiz-claudio-rj.github.io/finder-organizer/)
 
 ```bash
 brew install luiz-claudio-rj/tap/finder-organizer

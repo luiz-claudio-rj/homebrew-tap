@@ -5,7 +5,7 @@ cask "finder-organizer" do
   url "https://github.com/luiz-claudio-rj/finder-organizer/archive/refs/tags/v#{version}.tar.gz"
   name "Organizador"
   desc "Organiza arquivos em pastas por assunto com o botão direito no Finder"
-  homepage "https://github.com/luiz-claudio-rj/finder-organizer"
+  homepage "https://luiz-claudio-rj.github.io/finder-organizer/"
 
   livecheck do
     url :url
