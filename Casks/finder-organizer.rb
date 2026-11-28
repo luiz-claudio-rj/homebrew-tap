@@ -1,6 +1,6 @@
 cask "finder-organizer" do
-  version "1.1.0"
-  sha256 "b692eee38d5a8079d92bb7afd619f934b7fe092f550620a82995394a3b6d42e1"
+  version "1.1.1"
+  sha256 "f89b89f97adef8ef138757d949e1ac93221373d431af39e0b19cd084b24dd3ce"
 
   url "https://github.com/luiz-claudio-rj/finder-organizer/archive/refs/tags/v#{version}.tar.gz"
   name "Organizador"
