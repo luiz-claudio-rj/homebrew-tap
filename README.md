@@ -4,7 +4,7 @@ Pacotes do Homebrew de [luiz-claudio-rj](https://github.com/luiz-claudio-rj).
 
 ## Organizador para Mac
 
-Organize arquivos em pastas por assunto com o botão direito no Finder. Você vê a proposta antes e pode desfazer. [Página do projeto](https://luiz-claudio-rj.github.io/finder-organizer/)
+Organize arquivos em pastas por assunto com o botão direito no Finder. Você vê a proposta antes e pode desfazer. [Página do projeto](https://organizador.oluiz.dev/)
 
 ```bash
 brew install luiz-claudio-rj/tap/finder-organizer
@@ -14,7 +14,7 @@ Um comando só: monta o app no seu Mac e instala a Ação Rápida no Finder. Nã
 
 ## Converter para Mac
 
-Converta vídeo, áudio e imagem com o botão direito no Finder. [Página do projeto](https://luiz-claudio-rj.github.io/finder-converter/)
+Converta vídeo, áudio e imagem com o botão direito no Finder. [Página do projeto](https://converter.oluiz.dev/)
 
 ```bash
 brew install luiz-claudio-rj/tap/finder-converter

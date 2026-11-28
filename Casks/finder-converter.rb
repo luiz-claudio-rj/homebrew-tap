@@ -5,7 +5,7 @@ cask "finder-converter" do
   url "https://github.com/luiz-claudio-rj/finder-converter/archive/refs/tags/v#{version}.tar.gz"
   name "Converter"
   desc "Converte vídeo, áudio e imagem com o botão direito no Finder"
-  homepage "https://luiz-claudio-rj.github.io/finder-converter/"
+  homepage "https://converter.oluiz.dev/"
 
   livecheck do
     url :url
